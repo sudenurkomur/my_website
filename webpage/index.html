@@ -16,6 +16,20 @@
  #main {margin-left: 120px}
  /* Remove margins from "page content" on small screens */
  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+ @keyframes slideDown {
+        from {
+            margin-top: -100px;
+            opacity: 0;
+        }
+        to {
+            margin-top: 0;
+            opacity: 1;
+        }
+    }
+
+    .header-animation {
+        animation: slideDown 1s ease-out;
+    }
  </style>
  <body class="w3-black">
  
@@ -46,7 +60,7 @@
    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">SPEAKER</a>
+     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
    </div>
  </div>
@@ -55,9 +69,9 @@
  <div class="w3-padding-large" id="main">
    <!-- Header/Home -->
    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> SUDE NUR KOMUR</h1>
+     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> SUDE NUR KÖMÜR</h1>
      <p>Computer Engineer </p>
-     <img src="327442CF-7E65-4151-AC14-4F30BA36FB97 copy.jpeg" alt="boy" class="w3-image" width="400" height="700">
+     <img src="327442CF-7E65-4151-AC14-4F30BA36FB97 copy.jpeg" alt="boy" class="w3-image" width="300" height="500">
    </header>
  
    <!-- About Section -->
@@ -133,57 +147,55 @@
   
  
   
-   <!-- Contact Section -->
-   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-     <h2 class="w3-text-light-grey">Contact Me</h2>
-     <hr style="width:200px" class="w3-opacity">
- 
-     <div class="w3-section">
-       <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Izmir, Turkey</p>
-       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 000-000-0000</p>
-       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: sude.sudenur53@gmail.com</p>
-     </div><br>
-     <a href="https://www.instagram.com/blog_littlemonster?igsh=cjZpbjZrM29oaDV0&utm_source=qr" style="display: inline-block;">
-      <i class="fa fa-instagram w3-hover-opacity" style="font-size: 26px;"></i>
-  </a>
-  
-  <a href="https://www.linkedin.com/in/sudenurkomur" style="display: inline-block;">
-      <i style="font-size:26px" class="fa">&#xf08c;</i>
-  </a>
-  
-  <a href="https://github.com/sudenurkomur" style="display: inline-block;">
-      <i style="font-size:26px" class="fa">&#xf09b;</i>
-  </a>
-  
-     <!-- End Contact Section -->
-   </div>
-   
-    
-    
-  
-  
-  
-     
-   <!-- End footer -->
-   </footer>
- 
- <!-- END PAGE CONTENT -->
- </div>
- 
-     <p>Let's get in touch. Send me a message:</p>
- 
-     <form action="mail.php" method="post" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-          </button>
-      </p>
-  </form>
-  
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <div class="w3-row-padding">
+        <div class="w3-col m6">
+            <h2 class="w3-text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+            
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Izmir, Turkey</p>
+                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> sude.sudenur53@gmail.com</p>
+                <br>
+                <style>
+                  .social-link {
+                      margin-right: 20px;
+                  }
+              </style>
+              
+              <a href="https://www.instagram.com/blog_littlemonster?igsh=cjZpbjZrM29oaDV0&utm_source=qr" class="social-link" style="display: inline-block;">
+                  <i class="fa fa-instagram w3-hover-opacity" style="font-size: 26px;"></i>
+              </a>
+              
+              <a href="https://www.linkedin.com/in/sudenurkomur" class="social-link" style="display: inline-block;">
+                  <i style="font-size:26px" class="fa">&#xf08c;</i>
+              </a>
+              
+              <a href="https://github.com/sudenurkomur" class="social-link" style="display: inline-block;">
+                  <i style="font-size:26px" class="fa">&#xf09b;</i>
+              </a>
+              
+            </div>
+        </div>
+        <div class="w3-col m6">
+            <h2 class="w3-text-light-grey">Send Message</h2>
+            <hr style="width:200px" class="w3-opacity">
+            
+            <form action="mail.php" method="post" target="_blank">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+                <p>
+                    <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+
    
  </body>
  </html>
